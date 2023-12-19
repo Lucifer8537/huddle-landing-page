@@ -1,0 +1,23 @@
+<div class="main-container">
+  <ng-container *ngFor="let m of mainData; let i = index">
+    <div class="article">
+      <img
+        [ngClass]="0 === i % 2 ? 'order-2' : 'order-1'"
+        src="{{ m.imgSrc }}"
+        alt="image"
+        class="article-img"
+      />
+      <div
+        [ngClass]="0 === i % 2 ? 'order-1' : 'order-2'"
+        class="article-context-container"
+      >
+        <div class="article-title">
+          {{ m.title }}
+        </div>
+        <div class="article-context">
+          {{ m.context }}
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

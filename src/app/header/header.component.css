@@ -1,0 +1,105 @@
+.header-container {
+  padding: 5%;
+  background-color: hsl(193, 100%, 96%);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+}
+.free-btn {
+  background-color: white;
+  border: 1px solid white;
+  padding: 10px 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 30px -17px;
+  font-family: "OpenSans";
+  color: hsl(192, 100%, 9%);
+  font-weight: 700;
+}
+
+.header-bottom {
+  color: hsl(192, 100%, 9%);
+  width: 40%;
+  margin-bottom: 4%;
+}
+.header-title {
+  font-family: "Poppins-Medium";
+  font-size: 45px;
+  line-height: 1.2em;
+  margin-top: 25%;
+  font-weight: 600;
+}
+.header-context {
+  font-family: "OpenSans";
+  font-weight: 500;
+  font-size: 19px;
+  margin-top: 7%;
+}
+.header-btn {
+  font-family: "OpenSans";
+  font-size: 15px;
+  color: white;
+  border-color: transparent;
+  background-color: hsl(322, 100%, 66%);
+  padding: 15px 75px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-top: 6%;
+}
+
+@media (min-width: 679px) {
+  .header-container {
+    background-image: url("../../assets/illustration-mockups.svg"),
+      url("../../assets/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 40%, 100%;
+    background-position: 90% 72%;
+  }
+  .header-btn,
+  .free-btn {
+    cursor: pointer;
+  }
+  .header-btn:hover {
+    opacity: 0.7;
+  }
+  .free-btn:hover {
+    color: hsl(192, 100%, 9%, 0.7);
+  }
+}
+@media (max-width: 678px) {
+  .logo {
+    width: 35%;
+  }
+  .free-btn {
+    padding: 2% 7%;
+    font-size: 70%;
+    box-shadow: 0px 0px 30px -14px;
+  }
+  .header-container {
+    background-image: url("../../assets/illustration-mockups.svg"),
+      url("../../assets/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 80%, 100%;
+    background-position: center 93%, top;
+  }
+  .header-bottom {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 90%;
+  }
+  .header-title {
+    font-size: 170%;
+    line-height: unset;
+  }
+  .header-context {
+    font-size: 110%;
+  }
+  .header-btn {
+    font-size: 90%;
+    padding: 4% 20%;
+    margin-top: 9%;
+  }
+}

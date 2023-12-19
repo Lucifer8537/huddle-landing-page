@@ -1,0 +1,36 @@
+<div class="footer-container">
+  <div class="footer-logo">
+    <img src="../../assets/logo.svg" alt="logo" class="logo" />
+  </div>
+  <div class="footer-main-container">
+    <div class="footer-contact-container">
+      <ng-container *ngFor="let c of contact">
+        <img src="{{ c.icon }}" alt="icon" />
+        <div class="contact-info">{{ c.info }}</div>
+      </ng-container>
+    </div>
+    <div class="footer-main-option">
+      <ng-container *ngFor="let o of option">
+        <div class="option">
+          {{ o }}
+        </div>
+      </ng-container>
+    </div>
+    <div class="footer-main-social">
+      <div class="social-icon">
+        <i class="icon fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="social-icon">
+        <i class="icon fa-brands fa-twitter"></i>
+      </div>
+      <div class="social-icon">
+        <i class="icon fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">&copy; Copyright 2018 Huddle. All rights reserved</div>
+  <div class="build-container">
+    <div class="title">Ready To Build Your Community?</div>
+    <button class="header-btn">Get Started For Free</button>
+  </div>
+</div>
